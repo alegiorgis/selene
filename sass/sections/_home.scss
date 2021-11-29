@@ -1,0 +1,129 @@
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+    
+
+    &__background {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+
+        &-opacityMask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            mix-blend-mode: multiply;
+            background-color: rgba(122, 122, 122, 1);
+        }
+
+        &-img {
+           height: 100vh;
+           width: 100%;
+           object-fit: cover;
+           object-position: center;
+        }
+
+    }
+
+
+    &__welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0 0 calc(100% / 12 * 5);
+        color: $white;
+
+        &-title {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            @include respond(mobile) {
+                font-size: 3.375rem;
+            }
+        }
+
+        &-p{
+            margin-top: 1rem;
+
+            @include respond(small-desktop) {
+                width: 90%;
+                margin-top: 2rem;
+            }
+
+            @include respond(mobile) {
+                width: 100%;
+                font-size: 0.875rem;
+            }
+        }
+
+        &-button {
+            margin-top: 2.625rem;
+            color: $bordeaux;
+            width: 50%;
+
+            &:hover {
+                color: $white;
+                background-color: transparent;
+                box-shadow: inset 0 0 4px $white;
+                backdrop-filter: blur(5px);
+
+            }
+
+            @include respond(mobile) {
+                margin-top: 4rem;
+                width: 100%;
+            }
+        }
+
+        @include respond(small-desktop) {         
+            flex: 0 0 calc(100% / 12 * 12);
+            text-align: center;
+            align-items: center;
+        }
+
+    }
+
+    &__separation {
+        margin-top: -9rem;
+
+        @include respond(mobile){
+            margin-top: -4rem;
+        }
+
+
+        // background-color: $white;
+        // position: absolute;
+        // left: 0;
+        // bottom: 0;
+        // width: 100%;
+        // height: 10%;
+        // z-index: -1;
+
+        // @include respond(small-desktop) {
+        //     bottom: -5%;
+        // }
+
+        // svg {
+        //     position: absolute;
+        //     bottom: -160%;
+        //     left: 0;
+        //     border: none;
+
+        //     @include respond(small-desktop) {
+        //         bottom: 80%;
+        //     }
+        // }
+        
+
+        
+    }
+}

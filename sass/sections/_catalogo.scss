@@ -1,0 +1,153 @@
+.catalogo {
+    height: 40rem;
+    display: flex column;
+    margin-top: -8rem;
+
+
+    @include respond(tablet){
+        margin-top: -3rem;
+        height: 30rem;
+    }
+
+    @include respond(mobile){
+        height: 100vh;
+        padding-top: 7rem;
+        margin-top: -6rem;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+
+        @include respond(mobile){
+            padding-top: 1rem;
+            font-size: 2.5rem;
+        }
+
+    }
+
+    &__carrousel {
+        display: flex;
+        height: 70%;
+        align-items: center;
+
+        @include respond(mobile){
+            height: 85%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+
+        @include respond(mobile) {
+           flex-direction: column;
+        }
+    
+        &-img {
+            position: relative;
+            width: 50%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include respond(small-desktop) {
+                padding-left: 5rem;
+              }
+
+            @include respond(mobile) {   
+               padding-top: 0.5rem;
+               padding-left: 0;
+               width: 100%;
+               height: 60%;
+             }
+
+            
+            &-src {
+               max-width: 100%;
+               max-height: 100%;
+
+               @include respond(small-desktop) {
+                max-width: 90%;
+                max-height: 90%;
+              }
+
+              @include respond(tablet) {
+                max-width: 80%;
+                max-height: 80%;
+              }
+            }
+        }
+
+        &-info {
+            padding-right: 5rem;
+            width: 50%;
+            display: flex column;      
+            @include respond(mobile) {
+                margin-right: 0;
+                height: 40%;
+                width: 100%;
+                padding: 1rem 0 0 0;
+                text-align: center;
+              }
+        }
+
+        &-title {
+            color: $bordeaux;
+            margin-bottom: 1rem;
+    
+            @include respond(tablet) {
+                margin-bottom: 0rem;
+                font-size: 1.75rem;
+              }
+        }
+
+        &-p {
+            @include respond(tablet) {
+                font-size: 0.875rem;   
+              }
+        }
+
+    }
+
+
+    &__controls {
+        color: $strong-pink;
+        border-radius: 80%;
+        background-color: $white;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        &:hover {
+            transform: scale(120%) !important;
+        }
+        
+        &::after {
+            content: none !important;
+        }
+
+        @include respond(mobile) {
+            display: none;
+
+          }
+        
+    }
+
+    &__pagination {
+        position: absolute;
+        bottom: 0 !important
+    }
+
+}
+

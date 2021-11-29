@@ -1,0 +1,80 @@
+.quienesSomos {
+    background-color: $baby-pink;
+    color: $bordeaux;
+    margin-top: -3rem;
+
+    @include respond(mobile){
+        margin-top: -1rem;
+        }
+
+    &__separation-bottom {
+       margin-top: -0.5rem;
+    }
+    
+    &__separation-top {
+        margin-top: -3rem;
+     }
+
+    &__header {
+       margin-bottom: 4.75rem; 
+       color: $black;
+
+       @include respond(mobile){
+        font-size: 2.5rem;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex: 0 0 calc(100% / 12 * 10);
+        justify-content: space-between;
+
+        @include respond(tablet) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+         }
+
+    }
+
+    &__item {       
+        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        padding: 2rem;
+        display: flex;
+        flex: 0 0 calc(100% / 12 * 3.5);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 4rem;
+        background-color: $white;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+        
+
+        &:hover {
+            transform: scale(1.08) !important;
+        }
+
+        @include respond(tablet) {
+            max-width: 30rem
+         }
+
+        
+        &-title {
+            font-size: 1.5625rem;
+            margin-bottom: 0.7rem;
+            margin-top: 2rem;
+        }
+
+        &-p {
+            color: $black;
+            @include respond(mobile) {
+                font-size: 0.875rem;   
+              }
+        }
+        
+    }
+
+
+}

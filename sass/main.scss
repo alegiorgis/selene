@@ -1,0 +1,19 @@
+//BASE
+@import 'base/colors';
+@import 'base/reset';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/mediaQueries';
+
+//COMPONENTS
+@import 'components/button';
+@import 'components/navbar';
+
+//LAYOUTS
+@import 'layouts/container';
+
+//SECTIONS
+@import 'sections/home';
+@import 'sections/catalogo';
+@import 'sections/quienesSomos';
+@import 'sections/footer';

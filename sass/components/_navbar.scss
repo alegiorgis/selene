@@ -1,0 +1,120 @@
+header {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: $white;
+    height: 5rem;
+   
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo-img{
+        max-width: 80%;
+        max-height: 80%;
+        padding: 1rem 0;
+        display: flex;
+        flex: 0 0 calc(100% / 12 * 2);
+
+        @include respond(tablet) {
+            width: 70%;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex: 0 0 calc(100% / 12 * 7);
+        justify-content: space-between;
+        color: $black;
+
+        @include respond(small-desktop) {
+            font-size: 0.875rem;
+            flex: 0 0 calc(100% / 12 * 8);
+        }
+
+        @include respond(tablet) {
+           position: fixed;
+           right:0;
+           top: 0;
+           height: 100%;
+           width: 75vw;
+           background-color: $white;
+           display: flex;
+           flex-direction: column;
+           padding: 20% 0 20% 0;
+           justify-content: space-around;
+           align-items: center;
+           text-align: left;          
+           border-left: 2px solid $bordeaux;
+           transform: translateX(100%);
+           transition: transform 0.5s ease-in;
+        }
+
+        &--active{
+            transform: translateX(0%);
+        }
+    }
+
+    &__link {
+        @include respond(tablet) {
+            display: block;
+            opacity: 0;
+        }
+
+        &:hover {
+            transition: 0.2s ease-in-out;
+            color: $strong-pink;
+        }
+    }
+}
+
+.nav__burger {
+    display: none;
+    cursor: pointer;
+    z-index: 20;
+    
+    div {
+        transition: all 0.3s ease;
+        width: 30px;
+        height: 3px;
+        background-color: $bordeaux;
+        margin: 5px;       
+    }
+
+    .toggle &-line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle &-line2 {
+        opacity: 0;
+    }
+
+    .toggle &-line3 {
+        transform: rotate(45deg) translate(-5px, -6px);    
+    }
+
+    @include respond(tablet) {
+       display: block;
+    }
+}
+
+@keyframes navLinksFade {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
