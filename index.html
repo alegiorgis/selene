@@ -155,6 +155,10 @@
         </section>
         
 
+        
+       
+
+
 
         <div class="quienesSomos__separation-bottom">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -171,59 +175,53 @@
         </div>
 
         <section class="contacto container" id="contacto">
-            <h2>Contacto</h2>
+           
+
+            
+                <div class="container">
+                    <h2 class="quienesSomos__header"
+                    data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="700" data-aos-once="true">Contacto</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                    <h4 class="text-uppercase m-0">Puntos de entrega</h4>
+                                    <hr class="my-4" />
+                                    <p class="footer__menu-link2"></i> Montserrat o Caballito.<br>Envíos a domicilio (CABA y GBA) a cargo del cliente.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-envelope text-primary mb-2"></i>
+                                    <h4 class="text-uppercase m-0">Email</h4>
+                                    <hr class="my-4" />
+                                    <div class="footer__menu-link2"><a href="#!">pedidos.selene@gmail.com</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-mobile-alt text-primary mb-2 contacto__info-icon "><br></i>
+                                    <br><h4 class="text-uppercase m-0">Celular</h4>
+                                    <hr class="my-4" />
+                                    <div class="footer__menu-link2"> 1141774964 <br> 1161624345</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    
+                </div>
+            
+    
 
         <form  method="post">
         <div class="container contact-form">        
-            <div class="row">         
-               <div class="col-md-6">
-                   
-                 <div class="form-group">
-                     <label>Nombre</label>
-                     <input type="text" name="name" class="form-control" required="">
-                 </div>
-        
-                 <div class="form-group">
-                     <label>Correo</label>
-                     <input type="text" name="mail" class="form-control"required="">
-                 </div>
-                 
-                 <div class="form-group">
-                    <label>Asunto</label>
-                    <input type="text" name="asunto" class="form-control"required="">
-                </div>
 
-                 <div class="form-group">
-                     <label>Mensaje</label>
-                     <textarea  type="text" name="msg" class="form-control" rows="7" required=""></textarea>
-                 </div>
-
-
-                 <div class="py-3 text-center">
-                    <input type="submit" name="enviar" value="Enviar" class="btn btn-outline-dark mx-3">
-                    <input type="reset" name="reset" value="Borrar" class="btn btn-outline-dark mx-3">
-                </div>
-               
-               </div>
-        
-               <div class="col-md-6">
-                <br>
-                <p class="footer__menu-link2"><i class="fas fa-map-marker me-3"></i></i> Puntos de entrega: Montserrat o Caballito.<br>Envíos a domicilio (CABA y GBA) a cargo del cliente.</p>
-                <p class="footer__menu-link2"><i class="fas fa-phone me-3"></i> 1141774964 // 1161624345</p>
-                <p class="footer__menu-link2"><i class="fas fa-envelope me-3"></i> pedidos.selene@gmail.com</p>
-                <p class="footer__menu-link2"><i class="fab fa-instagram"></i> @selene__velas</p>
-                <p class="footer__menu-link2"><i class="fas fa-credit-card me-3"></i> Medios de pago: Efectivo, transferencia bancaria o Mercado Pago.</p>
-                <br>
-                </div>
-        
-            </div>
-        
-        </div>
     </form>
-
-    <?php
-    include ("enviar.php");
-    ?>
     </section>
 
 
