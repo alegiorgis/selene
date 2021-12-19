@@ -1069,6 +1069,8 @@ header {
   margin-top: 2rem;
 }
 
+
+
 .quienesSomos__item-p {
   color: #181818;
 }
@@ -1276,4 +1278,8 @@ section .form-control {
   background: rgba(255, 255, 255, 0.1);
 }
 
+
+.change-my-color {
+  fill: green;
+}
 

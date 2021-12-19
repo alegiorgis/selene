@@ -14,34 +14,40 @@
      <link rel="stylesheet" href="css/animate.css">
      <!-- CSS Bootstrap -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    
+     <!-- Core theme CSS (includes Bootstrap)-->
+     <link href="css/styles.css" rel="stylesheet" />
+     <link rel="stylesheet" href="css/main.css">
+
+
     <title>Selene</title>
 </head>
 <body id="go-top">
 
-    <header class="header" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="700">
-        <nav class="container nav">
-            <a href="#home" class="nav__logo"><img src="img/logo_nav.svg" alt="Logo de Selene" class="nav__logo-img"></a>           
-            <ul class="nav__menu">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link js-scroll-trigger">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#catalogo" class="nav__link js-scroll-trigger">Catálogo</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#quienesSomos" class="nav__link js-scroll-trigger">¿Quiénes Somos?</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contacto" class="nav__link js-scroll-trigger">Contacto</a>
-                </li>
-            </ul>
-            <div class="nav__burger">
-                <div class="nav__burger-line1"></div>
-                <div class="nav__burger-line2"></div>
-                <div class="nav__burger-line3"></div>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">
+                <img src="img/logo_nav.svg" alt="Selene">
+            </a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#home">HOME</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#catalogo">CATÁLOGO</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#quienesSomos">¿QUIÉNES SOMOS?</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#comoComprar">¿CÓMO ENCARGAR TU PEDIDO?</a></li>
+
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <header class="header" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="700">
+        
     </header>
     <main>
         <section class="home container" id="home">
@@ -52,7 +58,6 @@
             <div class="home__welcome" id ="home__welcome" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="700">
                 <h1 class="home__welcome-title">Bienvenido a Selene</h1>
                 <p class="home__welcome-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis convallis elit eget vestibulum. Curabitur cursus fermentum nibh.</p>
-                <button href="#catalogo" class="home__welcome-button button">Ver Productos</button>
             </div>
         </section>
 
@@ -180,54 +185,61 @@
 
         </div>
 
-        <section class="contacto container" id="contacto">
-           
+        <section class="contacto container" id="comoComprar">
 
-            
-                <div class="container">
-                    <h2 class="quienesSomos__header"
-                    data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="700" data-aos-once="true">Contacto</h2>
+
+            <div class="container">
+                <h2 class="quienesSomos__header"
+                data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="700" data-aos-once="true">¿Cómo encargar tu pedido?</h2>
+                <div class="quienesSomos__info">
+
                     <div class="row">
                         <div class="col-md-4 mb-3 mb-md-0">
                             <div class="card py-4 h-100">
                                 <div class="card-body text-center">
-                                    <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                    <h4 class="text-uppercase m-0">Puntos de entrega</h4>
+                                    <img src="img/Email.svg" alt="" >
+                                    <h3 style="color: #80395E;" class="quienesSomos__item-title">CONTACTANOS</h3>
                                     <hr class="my-4" />
-                                    <p class="footer__menu-link2"></i> Montserrat o Caballito.<br>Envíos a domicilio (CABA y GBA) a cargo del cliente.</p>
+                                    <p class="footer__menu-link2"></i>
+                                        Podes hacernos tu pedido mediante nuestro WhatsApp, Instagram o Facebook.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 mb-3 mb-md-0">
                             <div class="card py-4 h-100">
                                 <div class="card-body text-center">
-                                    <i class="fas fa-envelope text-primary mb-2"></i>
-                                    <h4 class="text-uppercase m-0">Email</h4>
+                                    <img src="img/Paid.svg" alt="" >
+                                    <h3 style="color: #80395E;" class="quienesSomos__item-title">MEDIOS DE PAGO</h3>
                                     <hr class="my-4" />
-                                    <div class="footer__menu-link2"><a href="#!">pedidos.selene@gmail.com</a></div>
+                                    <p class="footer__menu-link2"></i>
+                                        Una vez que elijas tu pedido podes abonar mediante efectivo, mercado pago o transferencia bancaria.
+                                    </p>                                
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 mb-3 mb-md-0">
                             <div class="card py-4 h-100">
                                 <div class="card-body text-center">
-                                    <i class="fas fa-mobile-alt text-primary mb-2 contacto__info-icon "><br></i>
-                                    <br><h4 class="text-uppercase m-0">Celular</h4>
-                                    <hr class="my-4" />
-                                    <div class="footer__menu-link2"> 1141774964 <br> 1161624345 </div>
+                                    <img src="img/Place.svg" alt="" >
+                                    <h3 style="color: #80395E;" class="quienesSomos__item-title">PUNTOS DE ENTREGA</h3>
+                                        <hr class="my-4" />
+                                    <p class="footer__menu-link2"></i>
+                                        Hacemos entregas en Montserrat o Caballito. <br>
+                                        Los envíos a domicilio (CABA y GBA) son a cargo del cliente.
+                                    </p>                                
                                 </div>
                             </div>
                         </div>
                     </div>  
-                    
                 </div>
-            
+            </div>
+           
+          
     
-
-        <form  method="post">
-        <div class="container contact-form">        
-
-    </form>
+                <form  method="post">
+                <div class="container contact-form">        
+                </form>
     </section>
 
 
@@ -299,10 +311,13 @@
         <a href="https://api.whatsapp.com/send?phone=+5491150504663&text=Hola!%20Hacenos%20tu%20consulta%20y%20a%20la%20brevedad%20te%20contactamos!" class="float" target="_blank">
                 <i class="fab fa-whatsapp my-float"></i>
         </a>
+
+
+        
     </footer>
 
     
-
+    
     <!-- Botón ir arriba -->
     <a class="go-top-btn rounded" href="#go-top">
         <i class="fas fa-angle-up"></i>
@@ -322,89 +337,17 @@
     <!-- Fin de pie de página -->
 
   
-
-
-    <!-- 
-
-
-            <form action="" class="contacto__form">
-                <label for="name">Nombre
-                    <input type="text" name="name" id="name" placeholder="Ingrese su nombre">
-                </label>
-                <label for="name">Correo
-                    <input type="text" name="correo" id="correo" placeholder="Ingrese su correo">
-                </label>
-                <label for="mensaje">Mensaje
-                    <textarea name="mensaje" id="mensaje" placeholder="Ingrese su mensaje"></textarea>
-                </label>
-                <input type="button" value="Enviar">
-                
-            </form>
-            <div class="contacto__info">
-                <ul class="contacto__info-items">
-                    <li class="contacto__info-item">
-                        <img src="" alt="" class="contacto__info-icon">
-                        Puntos de entrega: Montserrat o Caballito. Envíos a domicilio (CABA y GBA) a cargo del cliente.
-                    </li>
-                    <li class="contacto__info-item">
-                        <img src="" alt="" class="contacto__info-icon">
-                        11-4177-4964 // 11-6162-4345
-                    </li>
-                    <li class="contacto__info-item">
-                        <img src="" alt="" class="contacto__info-icon">
-                        pedidos.selene@gmail.com
-                    </li>
-                    <li class="contacto__info-item">
-                        <img src="" alt="" class="contacto__info-icon">
-                        @selene__velas
-                    </li>
-                    <li class="contacto__info-item">
-                        <img src="" alt="" class="contacto__info-icon">
-                        Medios de pago: Efectivo, transferencia bancaria o Mercado Pago.
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-
-
-        
-        <footer class="footer">
-            <div class="container">
-                <ul class="footer__menu">
-                    <li class="footer__menu-item">
-                        <a href="#home" class="footer__menu-link">Home</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a href="#catalogo" class="footer__menu-link">Catálogo</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a href="#quienesSomos" class="footer__menu-link">¿Quiénes Somos?</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a href="#contacto" class="footer__menu-link">Contacto</a>
-                    </li>
-                </ul>
-               <img src="img/logo_footer.svg" alt="Logo Selene" class="footer__logo">
-                <div class="footer__contact">
-                    <div class="footer__social">
-                        <img src="" alt="" class="footer__social-icon">
-                        <img src="" alt="" class="footer__social-icon">
-                    </div>
-                    <ul class="footer__contact-info">
-                        <li class="footer__contact-item"> <img src="" alt="" class="footer__contact-icon">11-4177-4964 // 11-6162-4345</li>
-                        <li class="footer__contact-item"> <img src="" alt="" class="footer__contact-icon">pedidos.selene@gmail.com</li>
-                        <li class="footer__contact-item"> <img src="" alt="" class="footer__contact-icon">Puntos de entrega: Montserrat o Caballito</li>
-                    </ul>
-                </div>
-            </div>          
-        </footer> --> 
     </main>  
+
+
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script>
       AOS.init();
     </script>
+    
     <script>
         const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -423,5 +366,12 @@
   });
     </script>
      <script src="js/main.js"></script>
+
+     <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>
