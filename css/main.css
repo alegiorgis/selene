@@ -1131,9 +1131,13 @@ footer .border-bottom {
 
 .footer__menu-link{
   color: #FFF;
-  
-  
 }
+
+.footer__menu-link3{
+  color: #FFF;
+  text-align: justify;
+}
+
 
 .footer__links{
   color: #FFF;
@@ -1143,6 +1147,8 @@ footer .border-bottom {
   transition: transform 0.5s ease;
   
 }
+
+
 
 .footer__menu-link2{
   color: #404040;
